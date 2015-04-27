@@ -20,8 +20,24 @@ courseRoster.config(function($stateProvider) {
 
 });
 
-courseRoster.directive("welcome", function() {
-    return function (scope, element, attrs) {
-        element.text(scope.app.message + " " + attrs.message);
+courseRoster.directive("enter", function() {
+    return function (scope, element) {
+        element.bind("mouseenter", function () {
+            console.log("I like school");
+        })
     }
 });
+
+courseRoster.directive("leave", function() {
+    return function (scope, element) {
+        element.bind("mouseenter", function () {
+            console.log("I'm inside school");
+        })
+    }
+});
+
+// courseRoster.directive("welcome", function() {
+//     return function (scope, element, attrs) {
+//         element.text(scope.app.message + " " + attrs.message);
+//     }
+//});
