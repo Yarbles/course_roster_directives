@@ -2,6 +2,10 @@
   <div  class="col-md-4 well well-sm">
     <div ng-show='courses.length'>
 
+    <!-- <div ng-app="welcome">
+        <welcome></welcome>
+    </div> -->
+
       <h2>Here are all of your courses:</h2>
       <ul>
         <li ng-repeat='item in courses'>
@@ -9,10 +13,6 @@
         </li>
       </ul>
     </div>
-
-    <!-- <div ng-app='courseRoster' ng-controller='CoursesCtrl as app'>
-        <div enter>I'm content!</div>
-    </div>     -->
 
 <!-- <div welcome="" message="Newcomer!"></div> -->
 
@@ -25,6 +25,9 @@
         </div>
     </form>
 
+<div ng-app='courseRoster'>
+    <div ng-controller='CoursesCtrl' courseName="cherry"></div>
+</div>
 </div>
 
 <div ui-view> </div>

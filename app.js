@@ -54,8 +54,24 @@ courseRoster.directive("leave", function() {
     }
 });
 
+courseRoster.directive("samplecourse", function () {
+    return {
+        template: '<div>{{ courseName }}</div>',
+        link: function (scope) {
+            scope.courseName = "math";
+        }
+    }
+});
+
 // courseRoster.directive("welcome", function() {
 //     return function (scope, element, attrs) {
 //         element.text(scope.app.message + " " + attrs.message);
 //     }
-//});
+// });
+
+// courseRoster.directive("welcome", function () {
+//     return {
+//         restrict: "EA",
+//         template: "<div>Welcome!</div>"
+//     }
+// });
