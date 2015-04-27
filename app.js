@@ -19,3 +19,10 @@ courseRoster.config(function($stateProvider) {
     });
 
 });
+
+courseRoster.directive("welcome", function() {
+    return {
+        restrict: "E",
+        template: "<div>Welcome</div>"
+    }
+});
