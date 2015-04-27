@@ -23,15 +23,33 @@ courseRoster.config(function($stateProvider) {
 courseRoster.directive("enter", function() {
     return function (scope, element) {
         element.bind("mouseenter", function () {
-            console.log("I like school");
+            console.log("Stop touching me");
         })
     }
 });
 
 courseRoster.directive("leave", function() {
     return function (scope, element) {
+        element.bind("mouseleave", function () {
+            console.log("Thank you");
+        })
+    }
+});
+
+courseRoster.directive("enter", function() {
+    return function (scope, element, attrs) {
         element.bind("mouseenter", function () {
-            console.log("I'm inside school");
+            element.removeClass("btn btn-warning");
+            element.addClass("btn btn-success");
+        })
+    }
+});
+
+courseRoster.directive("leave", function() {
+    return function (scope, element, attrs) {
+        element.bind("mouseleave", function () {
+            element.removeClass("btn btn-success");
+            element.addClass("btn btn-warning");
         })
     }
 });

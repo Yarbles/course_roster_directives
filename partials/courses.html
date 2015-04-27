@@ -19,13 +19,12 @@
     <h2>Add a new course</h2>
 
     <form ng-submit="CoursesFactory.addCourse()" class="form-inline" role="form">
-      <div class='form-group'>
-        <input type="text" ng-model='CoursesFactory.courseName' class='form-control' placeholder='Enter a course name'>
-      </div>
-      <button type='submit' class='btn btn-default btn-inline'>Submit</button>
+        <div ng-app="courseRoster">
+            <input type="text" ng-model='CoursesFactory.courseName' class='form-control' placeholder='Enter a course name'>
+            <button type='submit' class="btn btn-warning" enter leave>Submit</button>
+        </div>
     </form>
 
-</div>
 </div>
 
 <div ui-view> </div>
