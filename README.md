@@ -1,5 +1,5 @@
 # Course Roster for Epicodus
-## by James Nielson and Patrick Fiorentino
+## by James Nielson and Reid Baldwin
 #### Date: April 22, 2015
 
 An app to manage a course-list.

@@ -21,8 +21,7 @@ courseRoster.config(function($stateProvider) {
 });
 
 courseRoster.directive("welcome", function() {
-    return {
-        restrict: "E",
-        template: "<div>Welcome</div>"
+    return function (scope, element, attrs) {
+        element.text(scope.app.message + " " + attrs.message);
     }
 });
